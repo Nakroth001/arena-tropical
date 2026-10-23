@@ -234,19 +234,27 @@
     /* HERO */
 
     .hero {
-      min-height: 680px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      isolation: isolate;
-      background:
-        linear-gradient(90deg, rgba(10,10,8,.95) 0%,
-        rgba(10,10,8,.83) 44%,
-        rgba(10,10,8,.25) 100%),
-        linear-gradient(0deg, var(--black) 0%, transparent 28%),
-        url("https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=2000&q=85")
-        center 45% / cover;
-    }
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 10, 8, 0.88) 0%,
+      rgba(10, 10, 8, 0.60) 48%,
+      rgba(10, 10, 8, 0.12) 100%
+    ),
+    linear-gradient(
+      0deg,
+      var(--black) 0%,
+      transparent 28%
+    ),
+    url("https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=2000&q=85")
+    center / cover no-repeat;
+}
 
     .hero::after {
       content: "";
